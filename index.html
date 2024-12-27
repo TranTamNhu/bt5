@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 650px;
+            height: 500px;
+            background-image: url(https://inkythuatso.com/uploads/thumbnails/800/2022/05/16-hinh-nen-hoa-tulip-inkythuatso-11-16-20-37.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+
+        }
+        .container::before{
+            content: "";
+            background: linear-gradient(0deg,#0f193e,#fff);
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5;
+            visibility: hidden;
+            transition: all .5s ease-in-out;
+
+
+        }
+
+        .title {
+
+            transition: all .1s ease-in-out;
+           color: rgb(2, 10, 27);
+            font-size: 28px;
+            transition: all .4s ease-in-out;
+            
+
+
+        }
+
+        .a {
+            color: white;
+            transform: translateY(80px);
+            visibility: hidden;
+            transition: all .4s ease-in-out;
+            width: 390px;
+            text-align: center;
+            font-family: sans-serif;
+          
+
+        }
+        
+            
+        .container:hover::before{
+            visibility: visible;
+        }
+
+
+        .container:hover >.title {
+            color: white;
+            transform: translateY(-30px);
+        }
+        .container:hover >.a{
+            visibility: visible;
+            transform: translateY(65px);
+    
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="title">
+            <h1 class="t" style="font-family: sans-serif;"><span style="font-weight: lighter;">HOLY</span> <span style="font-weight: bolder;">SADIE</span></h1>
+        </div>
+        <div class="a">
+            <span style="font-size: 18px;">SADIE NEVER TOOK HER EYES OFF ME. SHE HAD A DARK SOUL</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
